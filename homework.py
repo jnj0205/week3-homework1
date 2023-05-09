@@ -10,17 +10,17 @@ class Animals:
         self.energy = energy
         
         
-    def buddy_play(self, paying):
-        self.energy -= play//5
-        
+    def buddy_play(self, play):
+        play_time = play //5
+        self.energy -= play
+        print(f"After paying {play} minutes, the {self.breed}now has a level of {self.energy}")
+    
 
-    def buddy_sleep(self, sleeping):
-        self.energy += sleep*10
-        
-    
-    
+    def buddy_sleep(self, sleep):
+        sleep_time = sleep * 10
+        self.energy += sleep
+        print(f"After paying {sleep} minutes, the {self.breed}now has a level of {self.energy}")
+            
 animal1 = Animals('french_bulldog', '2')
 animal2 = Animals('pitbull', '10')
-animal3 = Animals('pudle', '8')
-
-print(animal1.energy)
+animal3 = Animals('puddle', '8')
