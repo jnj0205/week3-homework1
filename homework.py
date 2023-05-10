@@ -3,7 +3,6 @@
 # an integer and increase/decrease the energy of the animal with a formatted print statement
 
 class Animals:
-    buddy = 'dog'
     
     def __init__(self, breed, energy):
         self.breed = breed
@@ -21,6 +20,8 @@ class Animals:
         self.energy += sleep
         print(f"After paying {sleep} minutes, the {self.breed}now has a level of {self.energy}")
             
-animal1 = Animals('french_bulldog', '2')
-animal2 = Animals('pitbull', '10')
-animal3 = Animals('puddle', '8')
+animal1 = Animals('french_bulldog', 2)
+animal2 = Animals('pitbull', 10)
+animal3 = Animals('puddle', 8)
+animal1.buddy_play(10)
+animal1.buddy_sleep(10)

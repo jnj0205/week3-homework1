@@ -1,5 +1,3 @@
-def main():
-    my_cart = Cart()
 class Cart:
     def __init__(self, cart, product, cart_list=[], product_list=[]):
         self.cart = cart
@@ -30,3 +28,4 @@ product1 = Product('bread', '2.33')
 product2 = Product('milk', '1.44')
 product3 = Product('eggs', '2.11')
 
+my_cart = Cart()
